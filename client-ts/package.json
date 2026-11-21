@@ -1,0 +1,20 @@
+{
+  "name": "wschat-client",
+  "version": "0.1.0",
+  "description": "Typed TypeScript client for the wschat Go server",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test test/*.test.ts",
+    "example": "tsx src/example.ts",
+    "build:web": "tsc -p tsconfig.web.json"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
